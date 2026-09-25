@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmed - Melted by Jana</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff8f2;
+            color: #3b2418;
+        }
+
+        header {
+            background: #3b2418;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .success {
+            max-width: 600px;
+            margin: 70px auto;
+            padding: 40px 25px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .order-number {
+            background: #fff8f2;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 25px 0;
+            font-size: 18px;
+        }
+
+        .total {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .message {
+            color: #765443;
+            line-height: 1.6;
+        }
+
+        .home-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: #3b2418;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Melted by Jana 🍪</h1>
+    </header>
+
+
+    <div class="success">
+
+        <div class="icon">
+            ✅
+        </div>
+
+        <h2>Order Confirmed!</h2>
+
+        <p class="message">
+            Thank you for ordering from Melted by Jana! 🍪
+            <br>
+            Your order has been received successfully.
+        </p>
+
+
+        <div class="order-number">
+
+            <strong>
+                Order #{{ order.id }}
+            </strong>
+
+        </div>
+
+
+        <p class="total">
+            Total: {{ total }} AED
+        </p>
+
+
+        <p class="message">
+            Payment Method: Cash on Delivery 💵
+            <br>
+            We will contact you regarding your delivery.
+        </p>
+
+
+        <a href="{% url 'home' %}" class="home-button">
+            Continue Shopping
+        </a>
+
+    </div>
+
+</body>
+</html>

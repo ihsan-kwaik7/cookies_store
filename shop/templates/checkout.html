@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Melted by Jana</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff8f2;
+            color: #3b2418;
+        }
+
+        header {
+            background: #3b2418;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .checkout {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .order-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .order-item:last-child {
+            border-bottom: none;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 12px 0;
+        }
+
+        .total {
+            border-top: 2px solid #3b2418;
+            padding-top: 15px;
+            margin-top: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .payment {
+            background: #fff8f2;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .place-order {
+            width: 100%;
+            border: none;
+            padding: 16px;
+            background: #3b2418;
+            color: white;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .back-button {
+            display: block;
+            margin-top: 15px;
+            padding: 12px;
+            background: #eadbd0;
+            color: #3b2418;
+            text-decoration: none;
+            border-radius: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Melted by Jana 🍪</h1>
+    </header>
+
+    <div class="checkout">
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            <div class="box">
+
+                <h2>Delivery Information 📦</h2>
+
+                <label for="customer_name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="customer_name"
+                    name="customer_name"
+                    required
+                >
+
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="05XXXXXXXX"
+                    required
+                >
+
+
+                <label for="city">
+                    Emirate
+                </label>
+
+                <select id="city" name="city" required>
+
+                    <option value="">
+                        Select your emirate
+                    </option>
+
+                    <option value="Sharjah">
+                        Sharjah
+                    </option>
+
+                    <option value="Dubai">
+                        Dubai
+                    </option>
+
+                    <option value="Ajman">
+                        Ajman
+                    </option>
+
+                </select>
+
+
+                <label for="address">
+                    Detailed Address
+                </label>
+
+                <textarea
+                    id="address"
+                    name="address"
+                    placeholder="Area, street, building/villa number..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="box">
+
+                <h2>Payment Method 💳</h2>
+
+                <div class="payment">
+                    💵 <strong>Cash on Delivery</strong>
+                    <br>
+                    <small>
+                        Pay when your order is delivered.
+                    </small>
+                </div>
+
+            </div>
+
+
+            <div class="box">
+
+                <h2>Order Summary 🛒</h2>
+
+                {% for item in items %}
+
+                    <div class="order-item">
+
+                        <strong>
+                            {{ item.size.cookie.name }}
+                        </strong>
+
+                        <br>
+
+                        {{ item.size.name }}
+                        × {{ item.quantity }}
+
+                        <span style="float: right;">
+                            {{ item.item_total }} AED
+                        </span>
+
+                    </div>
+
+                {% endfor %}
+
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong>{{ subtotal }} AED</strong>
+                </div>
+
+
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <strong>{{ delivery_fee }} AED</strong>
+                </div>
+
+
+                <div class="summary-row">
+                    <span>Service Fee</span>
+                    <strong>{{ service_fee }} AED</strong>
+                </div>
+
+
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>{{ total }} AED</span>
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="place-order">
+                Place Order
+            </button>
+
+        </form>
+
+
+        <a href="{% url 'cart' %}" class="back-button">
+            ← Back to Cart
+        </a>
+
+    </div>
+
+</body>
+</html>
