@@ -194,7 +194,7 @@ Within 2–3 hours, depending on your location.
             message=email_message,
             from_email=None,
             recipient_list=["kwaikjana@gmail.com"],
-            fail_silently=True,
+            fail_silently=False,
         )
 
         request.session["cart"] = {}
