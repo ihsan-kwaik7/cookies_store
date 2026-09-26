@@ -189,13 +189,18 @@ Delivery Time:
 Within 2–3 hours, depending on your location.
 """
 
-        send_mail(
-            subject=f"New Order #{order.id} - Melted by Jana",
-            message=email_message,
-            from_email=None,
-            recipient_list=["kwaikjana@gmail.com"],
-            fail_silently=False,
-        )
+        try:
+            send_mail(
+                subject=f"New Order #{order.id} - Melted by Jana",
+                message=email_message,
+                from_email=None,
+                recipient_list=["kwaikjana@gmail.com"],
+                fail_silently=False,
+            )
+        except Exception as e:
+            import logging
+            logging.exception("EMAIL_SEND_FAILED: %s", e)
+
 
         request.session["cart"] = {}
 
