@@ -7,7 +7,7 @@ SECRET_KEY = "django-insecure-change-this-later"
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["cookies-store.onrender.com"]
+ALLOWED_HOSTS = ["cookies-store.onrender.com", "127.0.0.1", "localhost"]
 
 
 INSTALLED_APPS = [
