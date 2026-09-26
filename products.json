@@ -138,5 +138,275 @@
     "image": "",
     "available": true
   }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 3,
+  "fields": {
+    "cookie": 4,
+    "name": "6 Pieces",
+    "price": "40.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 4,
+  "fields": {
+    "cookie": 4,
+    "name": "8 Pieces",
+    "price": "50.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 5,
+  "fields": {
+    "cookie": 4,
+    "name": "12 Pieces",
+    "price": "70.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 6,
+  "fields": {
+    "cookie": 5,
+    "name": "6 Pieces",
+    "price": "40.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 7,
+  "fields": {
+    "cookie": 5,
+    "name": "8 Pieces",
+    "price": "50.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 8,
+  "fields": {
+    "cookie": 5,
+    "name": "12 Pieces",
+    "price": "70.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 9,
+  "fields": {
+    "cookie": 6,
+    "name": "6 Pieces",
+    "price": "45.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 10,
+  "fields": {
+    "cookie": 6,
+    "name": "8 Pieces",
+    "price": "55.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 11,
+  "fields": {
+    "cookie": 6,
+    "name": "12 Pieces",
+    "price": "75.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 12,
+  "fields": {
+    "cookie": 7,
+    "name": "6 Pieces",
+    "price": "45.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 13,
+  "fields": {
+    "cookie": 7,
+    "name": "8 Pieces",
+    "price": "55.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 14,
+  "fields": {
+    "cookie": 7,
+    "name": "12 Pieces",
+    "price": "75.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 15,
+  "fields": {
+    "cookie": 8,
+    "name": "6 Pieces",
+    "price": "45.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 16,
+  "fields": {
+    "cookie": 8,
+    "name": "8 Pieces",
+    "price": "55.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 17,
+  "fields": {
+    "cookie": 8,
+    "name": "12 Pieces",
+    "price": "75.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 18,
+  "fields": {
+    "cookie": 9,
+    "name": "6 Pieces",
+    "price": "50.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 19,
+  "fields": {
+    "cookie": 9,
+    "name": "8 Pieces",
+    "price": "60.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 20,
+  "fields": {
+    "cookie": 9,
+    "name": "12 Pieces",
+    "price": "80.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 21,
+  "fields": {
+    "cookie": 10,
+    "name": "Medium",
+    "price": "80.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 22,
+  "fields": {
+    "cookie": 10,
+    "name": "Large",
+    "price": "100.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 23,
+  "fields": {
+    "cookie": 11,
+    "name": "Medium",
+    "price": "80.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 24,
+  "fields": {
+    "cookie": 11,
+    "name": "Large",
+    "price": "100.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 25,
+  "fields": {
+    "cookie": 12,
+    "name": "Medium",
+    "price": "85.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 26,
+  "fields": {
+    "cookie": 12,
+    "name": "Large",
+    "price": "105.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 27,
+  "fields": {
+    "cookie": 13,
+    "name": "Medium",
+    "price": "90.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 28,
+  "fields": {
+    "cookie": 13,
+    "name": "Large",
+    "price": "120.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 29,
+  "fields": {
+    "cookie": 14,
+    "name": "Standard",
+    "price": "70.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 30,
+  "fields": {
+    "cookie": 15,
+    "name": "Standard",
+    "price": "70.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 31,
+  "fields": {
+    "cookie": 16,
+    "name": "Standard",
+    "price": "75.00"
+  }
+},
+{
+  "model": "shop.cookiesize",
+  "pk": 32,
+  "fields": {
+    "cookie": 17,
+    "name": "Standard",
+    "price": "80.00"
+  }
 }
 ]
