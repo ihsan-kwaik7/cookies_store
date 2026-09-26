@@ -1,0 +1,142 @@
+[
+{
+  "model": "shop.cookie",
+  "pk": 4,
+  "fields": {
+    "name": "Classic Cookies",
+    "description": "Soft classic cookies loaded with chocolate chips. 🍪🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 5,
+  "fields": {
+    "name": "Classic Chocolate Cookies",
+    "description": "Soft chocolate cookies made with rich cocoa dough. 🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 6,
+  "fields": {
+    "name": "Nutella Cookies",
+    "description": "Soft cookies filled with creamy Nutella. 🤎🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 7,
+  "fields": {
+    "name": "Lotus Cookies",
+    "description": "Soft cookies filled with creamy Lotus spread. 🤎",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 8,
+  "fields": {
+    "name": "Kinder Cookies",
+    "description": "Soft cookies loaded with creamy Kinder chocolate. 🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 9,
+  "fields": {
+    "name": "Dubai Chocolate Cookies",
+    "description": "Soft chocolate cookies filled with rich Dubai chocolate. 🇦🇪🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 10,
+  "fields": {
+    "name": "Nutella Cake",
+    "description": "Soft cake filled with creamy Nutella and topped with chocolate. 🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 11,
+  "fields": {
+    "name": "Lotus Cake",
+    "description": "Soft cake filled with creamy Lotus and topped with Lotus crumbs. 🤎",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 12,
+  "fields": {
+    "name": "Kinder Cake",
+    "description": "Soft cake filled with creamy Kinder chocolate and topped with Kinder. 🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 13,
+  "fields": {
+    "name": "Dubai Chocolate Cake",
+    "description": "Soft chocolate cake filled with rich Dubai chocolate. 🇦🇪🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 14,
+  "fields": {
+    "name": "Nutella Cookie Scoops",
+    "description": "Big, soft cookie scoops filled with creamy Nutella. 🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 15,
+  "fields": {
+    "name": "Lotus Cookie Scoops",
+    "description": "Big, soft cookie scoops filled with creamy Lotus. 🤎",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 16,
+  "fields": {
+    "name": "Kinder Cookie Scoops",
+    "description": "Big, soft cookie scoops loaded with Kinder chocolate. 🍫",
+    "image": "",
+    "available": true
+  }
+},
+{
+  "model": "shop.cookie",
+  "pk": 17,
+  "fields": {
+    "name": "Dubai Chocolate Cookie Scoops",
+    "description": "Big, soft chocolate cookie scoops filled with rich Dubai chocolate. 🇦🇪🍫",
+    "image": "",
+    "available": true
+  }
+}
+]
