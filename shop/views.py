@@ -1,5 +1,6 @@
+import os
+import resend
 from django.shortcuts import render, redirect
-from django.core.mail import send_mail
 from .models import Cookie, CookieSize, Order, OrderItem
 
 
@@ -190,17 +191,18 @@ Within 2–3 hours, depending on your location.
 """
 
         try:
-            send_mail(
-                subject=f"New Order #{order.id} - Melted by Jana",
-                message=email_message,
-                from_email=None,
-                recipient_list=["kwaikjana@gmail.com"],
-                fail_silently=False,
-            )
+            resend.api_key = os.getenv("RESEND_API_KEY")
+
+            resend.Emails.send({
+                "from": "onboarding@resend.dev",
+                "to": ["kwaikjana@gmail.com"],
+                "subject": f"New Order #{order.id} - Melted by Jana",
+                "text": email_message,
+            })
+
         except Exception as e:
             import logging
             logging.exception("EMAIL_SEND_FAILED: %s", e)
-
 
         request.session["cart"] = {}
 
