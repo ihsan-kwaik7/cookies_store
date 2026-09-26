@@ -37,7 +37,6 @@ def cart(request):
     total = 0
 
     for size_id, quantity in cart_data.items():
-
         size = CookieSize.objects.get(id=size_id)
 
         item_total = size.price * quantity
@@ -111,7 +110,6 @@ def checkout(request):
     subtotal = 0
 
     for size_id, quantity in cart_data.items():
-
         size = CookieSize.objects.get(id=size_id)
 
         item_total = size.price * quantity
@@ -144,7 +142,6 @@ def checkout(request):
         )
 
         for item in items:
-
             OrderItem.objects.create(
                 order=order,
                 cookie=item["size"].cookie,
@@ -197,7 +194,7 @@ Within 2–3 hours, depending on your location.
             message=email_message,
             from_email=None,
             recipient_list=["kwaikjana@gmail.com"],
-            fail_silently=False,
+            fail_silently=True,
         )
 
         request.session["cart"] = {}
